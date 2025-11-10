@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kocham Cię 💖</title>
+  <style>
+    body {
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: "Comic Sans MS", sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .heart {
+      position: absolute;
+      color: crimson;
+      font-size: 40px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.7; }
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      border: 3px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255,255,255,0.9);
+      position: absolute;
+      font-size: 14px;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      color: crimson;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px red; }
+      to { text-shadow: 0 0 20px crimson; }
+    }
+
+    /* Sol kareler */
+    .box1 { top: 40%; left: 20%; transform: rotate(-5deg); }
+    .box2 { top: 55%; left: 23%; transform: rotate(5deg); }
+
+    /* Sağ kareler */
+    .box3 { top: 40%; right: 20%; transform: rotate(5deg); }
+    .box4 { top: 55%; right: 23%; transform: rotate(-5deg); }
+
+    /* Kalplerin yerleri */
+    .heart1 { top: 10%; left: 10%; }
+    .heart2 { top: 80%; left: 20%; }
+    .heart3 { top: 80%; right: 25%; }
+    .heart4 { top: 10%; right: 10%; }
+    .heart5 { bottom: 10%; left: 45%; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart heart1">❤️</div>
+    <div class="heart heart2">❤️</div>
+    <div class="heart heart3">❤️</div>
+    <div class="heart heart4">❤️</div>
+    <div class="heart heart5">❤️</div>
+
+    <div class="box box1">onun resmi</div>
+    <div class="box box2">benim resmim</div>
+    <div class="box box3">benim resmim</div>
+    <div class="box box4">onun resmi</div>
+
+    <div class="text">Kocham cię 💋</div>
+  </div>
+</body>
+</html>
